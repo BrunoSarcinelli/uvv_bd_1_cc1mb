@@ -23,7 +23,7 @@ salario AS salário, salario*1.2 AS novo_salário FROM funcionario fun
 WHERE salario < '35000'
 UNION
 SELECT CONCAT(primeiro_nome, ' ', nome_meio, ' ', ultimo_nome) AS nome_completo, FLOOR(DATEDIFF(CURDATE(), data_nascimento)/365.25) AS idade, 
-salario AS salário, salario*1.15 AS Novo_salário FROM funcionario fun
+salario AS salário, salario*1.15 AS novo_salário FROM funcionario fun
 WHERE salario >= '35000';
 
 /* QUESTÃO 05 */
